@@ -1,7 +1,7 @@
    using UnityEngine;
    using UnityEngine.AI;
     
-   public class MoveTo : MonoBehaviour {
+   public class Persecutor : MonoBehaviour {
        
       public Transform goal;
       NavMeshAgent agent;
@@ -11,8 +11,7 @@
       }
 
       void Update() {
-         if (Mathf.Abs((goal.position - transform.position).magnitude) > 1 ) {
-            Debug.Log($"Voy de {transform.position} a {goal.position}");
+         if (Mathf.Abs((goal.position - transform.position).magnitude) > 1.5 ) {
             agent.destination = goal.position;
          }
       }
