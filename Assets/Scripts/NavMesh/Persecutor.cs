@@ -8,11 +8,10 @@
        
       void Start () {
          agent = GetComponent<NavMeshAgent>();
+         agent.destination = goal.position;
       }
 
       void Update() {
-         if (Mathf.Abs((goal.position - transform.position).magnitude) > 1.5f ) {
-            agent.destination = goal.position;
-         }
+         if (Vector3.Distance(transform.position, goal.position) > 1.5f ) agent.destination = goal.position;
       }
    }

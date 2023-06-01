@@ -728,7 +728,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1614,7 +1614,6 @@ GameObject:
   - component: {fileID: 681394239}
   - component: {fileID: 681394238}
   - component: {fileID: 681394237}
-  - component: {fileID: 681394236}
   m_Layer: 0
   m_Name: RightEye
   m_TagString: Untagged
@@ -1637,19 +1636,6 @@ Transform:
   m_Father: {fileID: 251059578}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &681394236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681394234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab13d24de3a93ac40bf285051bc286d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goal: {fileID: 0}
 --- !u!136 &681394237
 CapsuleCollider:
   m_ObjectHideFlags: 0
