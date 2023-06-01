@@ -17,7 +17,7 @@ public class Patrol : MonoBehaviour {
 
     void Update() {
         Debug.Log($">>>>>>>>>>>>> {agent.destination} - {transform.position} = {Mathf.Abs((agent.destination - transform.position).magnitude)}");
-        if (Mathf.Abs((agent.destination - transform.position).magnitude) < 1f ) SetNextPointPatrol(indexPoint++ % pointsPatrol.Length);
+        if (Mathf.Abs((agent.destination - transform.position).magnitude) < 1.4f ) SetNextPointPatrol(indexPoint++ % pointsPatrol.Length);
     }
 
     void SetNextPointPatrol(int i) {

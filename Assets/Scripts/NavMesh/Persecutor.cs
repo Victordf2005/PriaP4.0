@@ -11,7 +11,7 @@
       }
 
       void Update() {
-         if (Mathf.Abs((goal.position - transform.position).magnitude) > 1.5 ) {
+         if (Mathf.Abs((goal.position - transform.position).magnitude) > 1.5f ) {
             agent.destination = goal.position;
          }
       }
