@@ -15,11 +15,12 @@ public class Patrol : MonoBehaviour {
         SetNextPointPatrol(0);
     }
 
-    void Update() {
+    void FixedUpdate() {
         if (agent.remainingDistance < 1.4f ) SetNextPointPatrol(indexPoint++ % pointsPatrol.Length);
     }
 
     void SetNextPointPatrol(int i) {
+        Debug.Log($">>>>> {i}");
         agent.destination = pointsPatrol[i].position;
     }
 
